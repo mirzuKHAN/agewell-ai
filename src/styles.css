@@ -1,0 +1,96 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1d3045;
+  background: #f5f8fa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f5f8fa;
+}
+
+.agewell-shell { background: #f5f8fa; }
+
+.sidebar {
+  background: #fff;
+  border-right: 1px solid #e7edf1;
+}
+
+.nav-caption {
+  color: #97a4b1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  padding-left: 10px;
+}
+
+.nav-button {
+  min-height: 42px;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* Keep inactive workspace links readable on the white sidebar regardless
+   of the browser's preferred colour scheme or Mantine's subtle variant. */
+.sidebar .nav-button[data-variant='subtle'] {
+  color: #34465a !important;
+  background-color: transparent !important;
+}
+
+.sidebar .nav-button[data-variant='subtle']:hover {
+  color: #07533f !important;
+  background-color: #edf6f3 !important;
+}
+
+.sidebar .nav-button[data-variant='light'] {
+  color: #ffffff !important;
+  background-color: #064b38 !important;
+}
+
+.sidebar .nav-button[data-variant='light']:hover {
+  color: #ffffff !important;
+  background-color: #075740 !important;
+}
+
+.sidebar .nav-button .mantine-Button-label,
+.sidebar .nav-button .mantine-Button-section {
+  color: inherit;
+}
+
+.stat-card-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-shrink: 0;
+}
+
+.topbar {
+  border-bottom: 1px solid #e9eef2;
+  padding-bottom: 14px;
+}
+
+.clock-pill { background: #fff; }
+
+.page-title {
+  color: #1d3045;
+  letter-spacing: -.035em;
+}
+
+.stat-card {
+  background: linear-gradient(145deg, #fff 0%, #fbfdfd 100%);
+  border-color: #e7edf1;
+}
+
+.mantine-Card-root { border-color: #e7edf1; }
+
+@media (max-width: 48em) {
+  .topbar { align-items: flex-start; }
+  .page-title { font-size: 25px; }
+}
